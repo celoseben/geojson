@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>leaflet-directive AngularJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACIKPopwLVR9yjXCJg8uZrx_BLJnmsd-E&v=3.exp"></script>
+
+<script src="https://angular-ui.github.io/ui-leaflet/bower_components/angular/angular.min.js"></script>
+
+<script src="https://angular-ui.github.io/ui-leaflet/bower_components/leaflet/dist/leaflet.js"></script>
+
+<script src="https://angular-ui.github.io/ui-leaflet/bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+
+<script src="https://angular-ui.github.io/ui-leaflet/dist/ui-leaflet_dev_mapped.js"></script>
+
+<script src="https://angular-ui.github.io/ui-leaflet/bower_components/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+<link rel="stylesheet" href="https://angular-ui.github.io/ui-leaflet/bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://angular-ui.github.io/ui-leaflet/bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+<link rel="stylesheet" href="https://angular-ui.github.io/ui-leaflet/bower_components/leaflet/dist/leaflet.css" />
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <div ng-app="demoapp">
+  <div ng-controller="MarkersSimpleController">
+    <div style="width:100%;text-align:center;padding:10px;font-family:Arial;font-weight:600:"><strong>Check-ins Evento HOJE 2018</strong></div>
+<!-- <leaflet lf-center="london" markers="markers" height="480px" width="100%"></leaflet> EVENTS WILL STILL FIRE but all will for each directive-->
+    <!-- NOTICE events attribute is optional it is more for options in whitelisting (enable), blacklisting (disable), and logic (emit or broadcast)  -->
+    <leaflet lf-center="center"  defaults="defaults" event-broadcast="events" markers="markers" height="900px" width="100%"></leaflet>
+     <!-- <h1>Markers simple example</h1>
+    <p>Initial marker position (lat/lng): <strong ng-bind="markers.mainMarker.lat"></strong> / <strong ng-bind="markers.mainMarker.lng"></strong></p>
+    <p>Actual marker position (lat/lng): <strong  ng-bind="position.lat"></strong> / <strong ng-bind="position.lng"></strong></p>  -->
+  
+</div>
+</div>
+  
+  
+
+    <script>
+      // Code goes here
+
+var app = angular.module("demoapp", ['ui-leaflet']);
+app.controller('MarkersSimpleController', [ '$scope', '$http', '$timeout', function($scope, $http, $timeout) {
+  
+  /*$http.get('https://raw.githubusercontent.com/celoseben/geojson/master/cidade_estado_unica.json', {}).then((result) => {
+    $scope.arrayDados = result.data;
+    $scope.converterCidadeEstado()
+  });
+  
+  var index = 0;
+  $scope.converterCidadeEstado = function() {
+    $scope.cidadeEstado = $scope.arrayDados[index].cidade + ', ' + $scope.arrayDados[index].estado;
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({
+      "address": $scope.cidadeEstado
+    }, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK && results.length > 0) {
+        var localizacao = results[0].geometry.location,
+            lat = localizacao.lat(),
+            lng = localizacao.lng();
+        $scope.arrayDados[index].lat = lat;
+        $scope.arrayDados[index].lng = lng;
+        console.log(JSON.stringify($scope.arrayDados));
+        $timeout(function() {
+          index++;
+          //$scope.converterCidadeEstado()
+        }, 1000);
+      }
+    });
+  }*/
+  
+   $scope.carregarDados = function(){     
+      $http.get('https://raw.githubusercontent.com/celoseben/geojson/master/checkins_eventoHoje2018_pronto.json', {}).then((result) => {
+      $scope.arrayMarcadores = result.data;
+        $scope.montarMarcadores()
+    });
+  }
+  $scope.carregarDados();
+  
+  $scope.markers = new Array();
+  
+  $scope.montarMarcadores = function(){
+    var montarMarkers = new Array();
+    angular.forEach($scope.arrayMarcadores, function(value, key) {
+      montarMarkers.push({
+        group: value.estado,
+        lat: value.lat,
+        lng: value.lng,
+        message: value.cidade + " - " + value.estado,
+        label: {
+          options: {
+            noHide: true
+          }
+        }
+      });
+      if (key == $scope.arrayMarcadores.length - 1){
+          $timeout(function() {
+            $scope.$apply(function() {
+              $scope.markers = montarMarkers;
+              console.log($scope.markers)
+            });
+          },1000);
+      }
+    });
+}
+  
+  var mainMarker = {
+    lat: -27.237539,
+    lng: -52.004280,
+    focus: true,
+    message: "Hey, drag me if you want",
+    draggable: true
+  };
+  
+  //-27.237539
+  //-52.004280
+  
+  //$scope.gerarMapa = function(){
+    //angular.extend($scope, {
+      angular.extend($scope, {
+    center: {
+      lat: -15.25241,
+      lng: -52.21115241,
+      zoom: 4
+    },
+    //markers: {mainMarker: angular.copy(mainMarker)},
+    markers: $scope.markers,
+        defaults: {
+          tileLayer: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          zoomControlPosition: 'topright',
+          tileLayerOptions: {
+            opacity: 0.9,
+            detectRetina: true,
+            reuseTiles: true,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | &copy <a href="https://www.openstreetmap.org/copyright">Funil PRÓ</a>',
+          },
+          scrollWheelZoom: true,
+          minZoom: 3,
+          worldCopyJump: true
+        },
+    events: { // or just {} //all events
+      markers:{
+        //enable: [ 'dragend' ]
+        //logic: 'emit'
+      }
+    }
+  });
+//}
+
+  $scope.$on("leafletDirectiveMarker.dragend", function(event, args){
+    $scope.position.lat = args.model.lat;
+    $scope.position.lng = args.model.lng;
+  });
+
+} ]);
+    </script>
+
+
+
+
+</body>
+
+</html>
