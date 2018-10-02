@@ -1,0 +1,362 @@
+﻿[
+  {
+    "cidade": "Concórdia",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Joaçaba",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Abdon Batista",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Ipumirim",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Itá",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Lindóia do Sul",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Jaborá",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Chapecó",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Cordilheira Alta",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Porto União",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Erechim",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Campos Novos",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Caçador",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Arabutã",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Xanxerê",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "São Leopoldo",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Florianópolis",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Marau",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Lages",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Blumenau",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Itajaí",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Brusque",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Videira",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Passo Fundo",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Rio do Sul",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Herval d'Oeste",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Xaxim",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Jaú",
+    "estado": "São Paulo"
+  },
+  {
+    "cidade": "Cornélio Procópio",
+    "estado": "Paraná"
+  },
+  {
+    "cidade": "Acrelândia",
+    "estado": "Acre"
+  },
+  {
+    "cidade": "Severiano de Almeida",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "São José do Rio Preto",
+    "estado": "São Paulo"
+  },
+  {
+    "cidade": "Ponte Serrada",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Lajeado",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Maximiliano de Almeida",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Capinzal",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Seara",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "São Miguel do Oeste",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Guaraciaba",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Catanduvas",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Erval Velho",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Curitiba",
+    "estado": "Paraná"
+  },
+  {
+    "cidade": "Abatiá",
+    "estado": "Paraná"
+  },
+  {
+    "cidade": "Aceguá",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Gaurama",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Pinhalzinho",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Tangará",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Lucas do Rio Verde",
+    "estado": "Mato Grosso"
+  },
+  {
+    "cidade": "Ipira",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Cocal do Sul",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Porto Alegre",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Peritiba",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Serra Alta",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Medianeira",
+    "estado": "Paraná"
+  },
+  {
+    "cidade": "Alto Bela Vista",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Luzerna",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "São José",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Treze Tílias",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Modelo",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Volta Redonda",
+    "estado": "Rio de Janeiro"
+  },
+  {
+    "cidade": "Pato Branco",
+    "estado": "Paraná"
+  },
+  {
+    "cidade": "Portalegre",
+    "estado": "Rio Grande do Norte"
+  },
+  {
+    "cidade": "Santo Ângelo",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Taquaruçu do Sul",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Presidente Castelo Branco",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Vargem Bonita",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Alegrete",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Brasília",
+    "estado": "Distrito Federal"
+  },
+  {
+    "cidade": "Rio de Janeiro",
+    "estado": "Rio de Janeiro"
+  },
+  {
+    "cidade": "São Paulo",
+    "estado": "São Paulo"
+  },
+  {
+    "cidade": "Abadia dos Dourados",
+    "estado": "Minas Gerais"
+  },
+  {
+    "cidade": "Balneário Camboriú",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Jundiaí",
+    "estado": "São Paulo"
+  },
+  {
+    "cidade": "Porto Lucena",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Zacarias",
+    "estado": "São Paulo"
+  },
+  {
+    "cidade": "Santa Mercedes",
+    "estado": "São Paulo"
+  },
+  {
+    "cidade": "Londrina",
+    "estado": "Paraná"
+  },
+  {
+    "cidade": "Goiânia",
+    "estado": "Goiás"
+  },
+  {
+    "cidade": "Joinville",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Irani",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Tapejara",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Itapevi",
+    "estado": "São Paulo"
+  },
+  {
+    "cidade": "Serafina Corrêa",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "São Bento do Sul",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Salete",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Bom Jesus",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Pelotas",
+    "estado": "Rio Grande do Sul"
+  },
+  {
+    "cidade": "Belo Horizonte",
+    "estado": "Minas Gerais"
+  },
+  {
+    "cidade": "Porto Belo",
+    "estado": "Santa Catarina"
+  },
+  {
+    "cidade": "Recife",
+    "estado": "Pernambuco"
+  }
+]
